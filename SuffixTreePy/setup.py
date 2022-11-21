@@ -24,7 +24,7 @@ class MyBuild(build_py):
             print(e)
             print("failed to copy ",dllpath)
         try:
-            os.system(f'cd {setupPath + "/../linux"} && PYTHONHOME=/usr make python')
+            os.system(f'cd {setupPath + "/../linux"} && PYTHONHOME=/usr PYTHONPATH=/usr make python')
             shutil.copy(sopath, packagePath)
         except Exception as e:
             print(e)
