@@ -37,13 +37,13 @@ cmdclass={
 
 setup(
     name="csuffixtree",
-    version="0.3.6",
+    version="0.3.7",
     author="oneengineer",
     author_email="oneengineer@gmail.com",
     description="A C implemented Suffix Tree package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    install_requires=["automaton_tools"],
+    install_requires=["automaton_tools", "antlr4-python3-runtime==4.9.3"],
     url="https://github.com/oneengineer/suffixtree",
     packages=find_packages(),
     include_package_data = True,

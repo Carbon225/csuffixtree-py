@@ -5,15 +5,14 @@ CC = g++
 INCLUDES = \
 	-I../SuffixTree \
 	-I../SuffixTreePyBinding \
-	-I${PYTHONHOME}/include/python3.7m/ \
+	-I${PYTHONHOME}/include/python3.10
 
 LIBPATH = \
 	-L.\
 	-L${PYTHONHOME}/lib
 
 LIBFLAGS += \
-	-l:libSuffixTree.a \
-	-lpython3.7m
+	-l:libSuffixTree.a
 
 .PHONY: default
 default: testSuffixTree
